@@ -1129,64 +1129,122 @@
     }
   </style>
 
+  <link rel="preload" href="/fonts/lato-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-300-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-400-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-700-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-300.woff2') format('woff2');
+    }
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-300-ext.woff2') format('woff2');
+    }
 
-  <!--[if lt IE 9]>
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-400.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-400-ext.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-700.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/assets/fonts/Lato/lato-700-ext.woff2') format('woff2');
+    }
+
+
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+  < !--[if lt IE 9]>
     <script src="https://merkson.eu/wp-content/themes/merkson//js/html5shiv.min.js" type="text/javascript"></script>
     <script src="https://merkson.eu/wp-content/themes/merkson//js/respond.min.js" type="text/javascript"></script>
-    <![endif]-->
-  <!-- Facebook Pixel Code -->
-  <script>
-    ! function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '242733306820435');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=242733306820435&ev=PageView&noscript=1" /></noscript>
-  <!-- End Facebook Pixel Code -->
+    < ![endif]-->
+      < !-- Facebook Pixel Code -->
+        <script> ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
 
-  <noscript>
-    <style>
-      .preloader-wrapper {
-        display: none;
-      }
-    </style>
-  </noscript>
-  <!-- Hotjar Tracking Code for https://www.merkson.pl -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () {
-        (h.hj.q = h.hj.q || []).push(arguments)
-      };
-      h._hjSettings = {
-        hjid: 2821763,
-        hjsv: 6
-      };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script');
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
+            n = f.fbq = function () {
+              n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+
+              ;
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }
+
+            (window, document, 'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '242733306820435');
+          fbq('track', 'PageView');
+        </script><noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=242733306820435&ev=PageView&noscript=1" /></noscript>
+        < !-- End Facebook Pixel Code --><noscript>
+            <style>
+              .preloader-wrapper {
+                display: none;
+              }
+            </style>
+          </noscript>
+          <!-- Hotjar Tracking Code for https://www.merkson.pl -->
+          <script>
+            (function (h, o, t, j, a, r) {
+              h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+              };
+              h._hjSettings = {
+                hjid: 2821763,
+                hjsv: 6
+              };
+              a = o.getElementsByTagName('head')[0];
+              r = o.createElement('script');
+              r.async = 1;
+              r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+              a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+          </script>
 
 </head>
 
@@ -2575,9 +2633,7 @@
     type='text/css' media='all' />
   <link rel='stylesheet' id='bootstrap-css'
     href='https://merkson.eu/wp-content/themes/merkson/css/bootstrap.min.css?ver=1.10' type='text/css' media='all' />
-  <link rel='stylesheet' id='lato-css'
-    href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700&#038;subset=latin-ext&#038;display=swap&#038;ver=1.10'
-    type='text/css' media='all' />
+
   <link rel='stylesheet' id='main-MERKSON-css'
     href='https://merkson.eu/wp-content/themes/merkson/css/main.min.css?ver=1.10' type='text/css' media='all' />
   <link rel='stylesheet' id='MERKSON-css' href='https://merkson.eu/wp-content/themes/merkson/style.css?ver=1.10'
