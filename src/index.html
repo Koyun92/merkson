@@ -2682,8 +2682,10 @@
     href='https://merkson.eu/wp-content/themes/merkson/css/bootstrap.min.css?ver=1.10' type='text/css' media='all' />
   <link rel='stylesheet' id='main-MERKSON-css'
     href='https://merkson.eu/wp-content/themes/merkson/css/main.min.css?ver=1.10' type='text/css' media='all' />
-  <link rel='stylesheet' id='MERKSON-css' href='https://merkson.eu/wp-content/themes/merkson/style.css?ver=1.10'
-    type='text/css' media='all' />
+  <!-- Preload CSS file and apply it once loaded -->
+  <link rel="preload" id="main-MERKSON-css"
+    href="https://merkson.eu/wp-content/themes/merkson/css/main.min.css?ver=1.10" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" />
   <link rel='stylesheet' id='sow-anything-carousel-base-60b0c91f6998-283-css'
     href='https://merkson.eu/wp-content/uploads/siteorigin-widgets/sow-anything-carousel-base-60b0c91f6998-283.css?ver=6.6.2'
     type='text/css' media='all' />
